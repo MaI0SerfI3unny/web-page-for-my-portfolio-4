@@ -144,6 +144,7 @@ form{
 }
 
 .form-txt{
+  max-width: 400px;
   color: #e14b5a;
   font-weight: bold;
 }
@@ -247,7 +248,6 @@ form button{
   }
 
   p{
-    width: 400px;
     margin-top: 2rem;
     margin-left: 2rem;
     color: #b8b8b8;
@@ -313,13 +313,13 @@ form button{
   .left-side{
     float: right;
     -ms-flex: 0 0 50%;
-    flex: 0 0 55.1%;
+    flex: 0 0 80.1%;
     max-width: 100%;
   }
   .right-side{
     float: left;
     -ms-flex: 0 0 50%;
-    flex: 0 0 45%;
+    flex: 0 0 70%;
     max-width: 100%;
   }
   nav img{
@@ -337,25 +337,33 @@ form button{
   }
 }
 
-@media (max-width:882px) {
+@media (max-width:768px) {
+  .input_age{
+    padding: 0;
+    margin:0;
+    width: 80px;
+    height: 30px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  input{
+    margin: 0;
+    width: 200px;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
   .left-side{
-    float: right;
+    margin-bottom: 3rem;
     -ms-flex: 0 0 100%;
-    flex: 0 0 70.1%;
+    flex: 0 0 10.1%;
     max-width: 100%;
   }
   .right-side{
     float: left;
     -ms-flex: 0 0 100%;
-    flex: 0 0 60%;
+    flex: 0 0 80%;
     max-width: 100%;
-  }
-}
-
-@media (max-width: 631px) {
-  .cont{
-    margin: 21px;
-    background: white;
   }
   .right-side{
     float: left;
@@ -368,5 +376,32 @@ form button{
     -ms-flex: 0 0 100%;
     flex: 0 0 60.1%;
     max-width: 100%;
+  }
+  nav button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    border:none;
+    margin-left: 1%;
+  }
+  ul{
+
+    margin-left: -1%;
+    padding:30px;
+    margin-top: 13%;
+    margin-bottom: auto;
+    list-style-type: none;
+  }
+  li{
+    margin-left: 5px;
+    display: block;
+    padding: 5px;
+  }
+  nav{
+    width: 100%;
+    height: 290px;
   }
 }
