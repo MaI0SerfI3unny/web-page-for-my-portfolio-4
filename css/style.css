@@ -6,71 +6,11 @@
 body{
   background-color: #e14b5a;
   font-family: 'Montserrat', sans-serif;
-  max-width: 1496px;
-  max-height: 620px;
-  
+  max-width: 2983px;
+  max-height: 1007px;
 }
 
 /*----------------------BOOTSTRAP OPTION-----------------------------*/
-
-.container {
-  width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-
-  margin-right: auto;
-  margin-left: auto;
-}
-
-@media (min-width: 576px) {
-  .container {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
-@media (min-width: 576px) {
-  .container, .container-sm {
-    max-width: 540px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container, .container-sm, .container-md {
-    max-width: 720px;
-  }
-}
-
-@media (min-width: 992px) {
-  .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1400px;
-  }
-}
 
 .justify-content-center {
   -ms-flex-pack: center !important;
@@ -86,8 +26,8 @@ body{
 }
 
 .img-fluid {
+  max-height: 480px;
   max-width: 100%;
-  height: 500px;
   margin-right: 2rem;
 }
 
@@ -99,21 +39,16 @@ body{
   text-align: center;
 }
 
-main{
-  max-width: 1491px;
-  max-height: 620px;
-}
-
 .cont{
   margin: 51px;
-height: 100%;
+max-width: 100%;
   background: white;
 }
 
 
 header{
   width: 100%;
-  height: 116px;
+
 }
 
 nav{
@@ -146,7 +81,7 @@ a:hover{
 }
 
 nav img{
-  width: 130px;
+
   float: left;
   margin-left: 6rem;
   padding: 30px;
@@ -191,7 +126,7 @@ h1{
 }
 
 p{
-  width: 400px;
+
   margin-top: 2rem;
   margin-left: 11rem;
   color: #b8b8b8;
@@ -227,7 +162,13 @@ form button{
 .right-side{
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
-  max-width: 50%;
+  max-width: 100%;
+}
+
+@media (max-width:1700px) {
+  h2{
+    font-size: 70px;
+  }
 }
 
 @media (max-width:1491px) {
@@ -241,7 +182,6 @@ form button{
     background-color: black;
     color: white;
     font-weight: bold;
-    width: 120px;
     height: 35px;
     border-radius: 15px;
     border:none;
@@ -249,7 +189,6 @@ form button{
     position: absolute;
   }
   nav img{
-    width: 130px;
     float: left;
     margin-left: 4rem;
     padding: 20px;
@@ -326,15 +265,15 @@ form button{
 
 @media (max-width:1110px) {
   nav button{
-    float: left;
+    float: right;
     background-color: black;
     color: white;
     font-weight: bold;
-    width: 120px;
+    width: 100px;
     height: 35px;
     border-radius: 15px;
     border:none;
-    margin-left: 20%;
+    margin-left: 10%;
     position: absolute;
   }
   .left-side{
@@ -359,6 +298,75 @@ form button{
   }
 }
 
-@media (max-width 1110px) {
+@media (max-width: 1024px) {
+  ul{
+    margin-left:15rem;
+  display: block;
+    padding:30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style-type: none;
+  }
+}
 
+@media (max-width: 972px) {
+  .left-side{
+    float: right;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 55.1%;
+    max-width: 100%;
+  }
+  .right-side{
+    float: left;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 45%;
+    max-width: 100%;
+  }
+  nav img{
+    width: 130px;
+    margin-left: 1rem;
+    padding: 15px;
+  }
+  ul{
+    margin-left:9rem;
+  display: block;
+    padding:30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    list-style-type: none;
+  }
+}
+
+@media (max-width:882px) {
+  .left-side{
+    float: right;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 70.1%;
+    max-width: 100%;
+  }
+  .right-side{
+    float: left;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 60%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 631px) {
+  .cont{
+    margin: 21px;
+    background: white;
+  }
+  .right-side{
+    float: left;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 70%;
+    max-width: 100%;
+  }
+  .left-side{
+    float: right;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 60.1%;
+    max-width: 100%;
+  }
 }
